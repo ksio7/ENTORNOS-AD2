@@ -2,8 +2,13 @@
  * @author Ricardodr
  */
 public class Jugador {
-	private int dorsal, numeroTarjetasAmarillas, numeroTarjetasRojas;
-
+	/**Indica el dorsal de un jugador*/
+	private int dorsal;
+	/**Indica el número de tarjetas amarillas que ha recibido un jugador durante un partido*/
+	private int numeroTarjetasAmarillas;
+	/**Indica el número de tarjetas rojas que ha recibido un jugador durante un partido*/
+	private int numeroTarjetasRojas;
+	
 	//Métodos getter por defecto
     public int getDorsal() {
 		return dorsal;
@@ -15,8 +20,8 @@ public class Jugador {
 		return numeroTarjetasRojas;
 	}
 	
-	//Métodos setter por defecto
-    /**Metodo setter que recibe un entero, de manera que si este entero está entre 1 y 30
+	//Métodos setter
+    /**Metodo setter que recibe un entero, de manera que si este entero esta entre 1 y 30
      * se establece como el valor del atributo dorsal del jugador que llama a al metodo.
      * De otra manera establece NumeroTarjetasRojas en -1.
      * @param int numeroTarjetasAmarillas

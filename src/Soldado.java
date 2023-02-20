@@ -3,7 +3,10 @@
  */
 public class Soldado {
 	//Atributos
-	private boolean estaMuerto; private int numeroBalas;
+	/**Indica si un soldado está o no muerto*/
+	private boolean estaMuerto;
+	/**Indica el número de balas con las que cuenta un soldado*/
+	private int numeroBalas;
 
     //Métodos getter
     public boolean isEstaMuerto() {
@@ -25,7 +28,7 @@ public class Soldado {
 			this.numeroBalas=-1;
 	}
 	
-	/** Metodo que no recibe ningún parámetro y que devuelve si el soldado que llama al metodo esta o no
+	/** Metodo que no recibe ningun parametro y que devuelve si el soldado que llama al metodo esta o no
 	 * en condiciones de disparar en base a su atributo numeroBalas, independientemente de que este muerto
 	 * @return true si el soldado que llama al metodo si puede disparar, lo cual pasa porque tenga balas, 
 	 * false en cualquier otro caso.

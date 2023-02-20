@@ -27,7 +27,7 @@ public class TestSoldado {
 	 * Segundo genero un entero aleatorio entre -99 y -1 y vemos si efectivamente asigna -1.
 	 */
 	@Test
-	void setNumeroBalas() {
+	void testSetNumeroBalas() {
 		int n;
 		n = (int)(Math.random()*100);
 		s1.setNumeroBalas(n);
@@ -60,7 +60,7 @@ public class TestSoldado {
 	@Test
 	void testPuedeDisparar2() {
 		int n;
-		n = (int)(1+Math.random()*100);
+		n = (int)(1+Math.random()*99);
 		s1.setNumeroBalas(n);
 		boolean resultadoEsperado = true;
 		boolean resultadoObtenido = s1.puedeDisparar();
