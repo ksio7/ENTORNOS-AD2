@@ -2,8 +2,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-public class TestSoldado {
 
+public class TestSoldado {
 	private Soldado s1;
 
 	/** Creamos un soldado nuevo cada vez que testeamos un metodo
@@ -39,8 +39,8 @@ public class TestSoldado {
 	}
 	
 	/**
-	 * Test para el método boolean puedeDisparar().
-	 * La respuesta dependerá de su numeroBalas, independientemente de si el soldado está vivo o muerto.
+	 * Test para el metodo boolean puedeDisparar().
+	 * La respuesta dependera de su numeroBalas, independientemente de si el soldado esta vivo o muerto.
 	 * Primero genero un entero aleatorio entre 1 y 99 y lo asigno como numeroBalas y compruebo
 	 * si efectivamente puede disparar.
 	 * Segundo genero un entero aleatorio entre -99 y 0 y compruebo si efectivamente no puedo disparar.
@@ -74,9 +74,9 @@ public class TestSoldado {
 	}
 	
 	/**
-	 * Test para el método void void Disparar(Soldado sol). La respuesta dependerá del númeroBalas
-	 * que tenga el soldado que llama al método independientemente de que este esté vivo o muerto,
-	 * y también es independiente de los atributos del soldado introducido como parámetro.
+	 * Test para el metodo void void Disparar(Soldado sol). La respuesta dependera del numeroBalas
+	 * que tenga el soldado que llama al metodo independientemente de que este este vivo o muerto,
+	 * y tambien es independiente de los atributos del soldado introducido como parametro.
 	 */
 	@Test
 	void testDisparar() {

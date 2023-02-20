@@ -3,7 +3,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class TestJugador {
+public class TestJugador {
 	Jugador j1;
 
 	/** Creo un nuevo jugador antes de hacer el test de cada metodo.
@@ -24,7 +24,7 @@ class TestJugador {
 	
 	//Test para probar los métodos setter propios -------------------------------------------
 	
-	/**Test para probar el método setter propio void ponerDorsal(int n)
+	/**Test para probar el metodo setter propio void ponerDorsal(int n)
 	 * Primero genero un entero aleatorio entre 0 y 1 y vemos si asigna ese entero.
 	 * Segundo genero un entero aleatorio entre 2 y 99 y vemos si efectivamente asigna -1.
 	 * Tercero genero un entero aleatorio entre -1 y -99 y vemos si efectivamente asigna -1.
@@ -45,7 +45,7 @@ class TestJugador {
 		assertTrue(j1.getDorsal()==-1);
 	}
 
-	/**Test para probar el método setter propio void setNumeroTarjetasRojas(int n)
+	/**Test para probar el metodo setter propio void setNumeroTarjetasRojas(int n)
 	 * Primero genero un entero aleatorio entre 0 y 2 y vemos si asigna ese entero.
 	 * Segundo genero un entero aleatorio entre 3 y 99 y vemos si efectivamente asigna -1.
 	 * Tercero genero un entero aleatorio entre -1 y -99 y vemos si efectivamente asigna -1.
@@ -64,7 +64,7 @@ class TestJugador {
 		assertTrue(j1.getNumeroTarjetasAmarillas()==-1);
 	}
 	
-	/**Test para probar el método setter propio void setNumeroTarjetasRojas(int n);
+	/**Test para probar el metodo setter propio void setNumeroTarjetasRojas(int n);
 	 * Primero genero un entero aleatorio entre 0 y 1 y vemos si asigna ese entero.
 	 * Segundo genero un entero aleatorio entre 2 y 99 y vemos si efectivamente asigna -1.
 	 * Tercero genero un entero aleatorio entre -1 y -99 y vemos si efectivamente asigna -1.
@@ -86,7 +86,7 @@ class TestJugador {
 	//Tests para probar el método boolean estaExpulsado() --------------------------------------
 	/**
 	 * Test para comprobar que un jugador esta expulsado si tiene 2 amarillas, independientemente
-	 * del número de rojas que tenga.
+	 * del numero de rojas que tenga.
 	 */
 	@Test
 	void testEstaExpulsado2Amarillas() {
@@ -95,7 +95,7 @@ class TestJugador {
 	}
 	/**
 	 * Test para comprobar que un jugador esta expulsado si tiene 1 roja, independientemente
-	 * del número de amarillas que tenga.
+	 * del numero de amarillas que tenga.
 	 */
 	@Test
 	void testEstaExpulsado1Roja() {
@@ -104,7 +104,7 @@ class TestJugador {
 	}
 	/**
 	 * Test para comprobar que un jugador no esta expulsado si no tiene ni 2 amarillas ni 1 roja.
-	 * Dado que los métodos setter propios solo asignan entre -1 y 2 amarillas y entre -1 y 1 rojas,
+	 * Dado que los metodos setter propios solo asignan entre -1 y 2 amarillas y entre -1 y 1 rojas,
 	 * basta con asignar entre -1 y 1 amarillas y entre -1 y 0 rojas y comprobar que no está
 	 * expulsado.
 	 */

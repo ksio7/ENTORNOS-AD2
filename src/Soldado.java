@@ -25,9 +25,9 @@ public class Soldado {
 			this.numeroBalas=-1;
 	}
 	
-	/** Método que no recibe ningún parámetro y que devuelve si el soldado que llama al método está o no
-	 * en condiciones de disparar en base a su atributo numeroBalas, independientemente de que esté muerto
-	 * @return true si el soldado que llama al método sí puede disparar, lo cual pasa porque tenga balas, 
+	/** Metodo que no recibe ningún parámetro y que devuelve si el soldado que llama al metodo esta o no
+	 * en condiciones de disparar en base a su atributo numeroBalas, independientemente de que este muerto
+	 * @return true si el soldado que llama al metodo si puede disparar, lo cual pasa porque tenga balas, 
 	 * false en cualquier otro caso.
 	 */
     public boolean puedeDisparar() {
@@ -37,9 +37,9 @@ public class Soldado {
         return false;
     }
     
-    /** Método que recibe como parámetro un objeto de clase Soldado y que hace al soldado que llama al método (
-     * independientemente de que esté vivo y de las balas que tenga) disminuir su atributo numeroBalas en una unidad
-     * y al soldado introducido como parámetro fijar su atributo estaMuerto en el estado de true.
+    /** Metodo que recibe como parametro un objeto de clase Soldado y que hace al soldado que llama al metodo (
+     * independientemente de que este vivo y de las balas que tenga) disminuir su atributo numeroBalas en una unidad
+     * y al soldado introducido como parametro fijar su atributo estaMuerto en el estado de true.
      * @param Soldado sol
      */
 	public void disparar(Soldado sol) {

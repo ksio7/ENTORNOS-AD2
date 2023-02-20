@@ -16,6 +16,11 @@ public class Jugador {
 	}
 	
 	//Métodos setter por defecto
+    /**Metodo setter que recibe un entero, de manera que si este entero está entre 1 y 30
+     * se establece como el valor del atributo dorsal del jugador que llama a al metodo.
+     * De otra manera establece NumeroTarjetasRojas en -1.
+     * @param int numeroTarjetasAmarillas
+     */
     public void ponerDorsal(int dorsal) {
     	if(dorsal >= 1 && dorsal <= 30) {
     		this.dorsal = dorsal;
@@ -25,9 +30,9 @@ public class Jugador {
     }
     
     //Métodos setter propios
-    /**Método setter que recibe un entero, de manera que si este entero es 0, 1 o 2, ese entero
+    /**Metodo setter que recibe un entero, de manera que si este entero es 0, 1 o 2, ese entero
      * se establece como el valor del atributo NumeroTarjetasAmarillas del jugador que llama a
-     * al método. De otra manera establece NumeroTarjetasRojas en -1.
+     * al metodo. De otra manera establece NumeroTarjetasRojas en -1.
      * @param int numeroTarjetasAmarillas
      */
 	public void setNumeroTarjetasAmarillas (int numeroTarjetasAmarillas) {
@@ -37,9 +42,9 @@ public class Jugador {
 			this.numeroTarjetasAmarillas=-1;
 	}
 	
-    /**Método setter que recibe un entero, de manera que si este entero es 0 o 1, ese entero
+    /**Metodo setter que recibe un entero, de manera que si este entero es 0 o 1, ese entero
      * se establece como el valor del atributo NumeroTarjetasRojas del jugador que llama a
-     * al método. De otra manera establece NumeroTarjetasRojas en -1.
+     * al metodo. De otra manera establece NumeroTarjetasRojas en -1.
      * @param int numeroTarjetasRojas
      */
 	public void setNumeroTarjetasRojas(int numeroTarjetasRojas) {
@@ -49,9 +54,9 @@ public class Jugador {
 			this.numeroTarjetasRojas=-1;
 	}
 
-	/**Método que devuelve si el jugador está o no expulsado en base al número de tarjetas amarillas o rojas
+	/**Metodo que devuelve si el jugador esta o no expulsado en base al numero de tarjetas amarillas o rojas
 	 * que ha recibido durante el encuentro.
-	 * @return true si el jugador que llama al método tiene por atributo numeroTarjetasAmarillas = 2 o si
+	 * @return true si el jugador que llama al metodo tiene por atributo numeroTarjetasAmarillas = 2 o si
 	 * numeroTarjetasRojas = 1, false en cualquier otro caso.
 	 */
 	public boolean estaExpulsado() {
